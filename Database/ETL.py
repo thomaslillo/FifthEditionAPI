@@ -6,6 +6,7 @@ from os.path import join
 import requests
 import config
 import sqlalchemy
+from sqlalchemy.exc import SQLAlchemyError
 
 
 class DNDETL:
@@ -13,21 +14,22 @@ class DNDETL:
      def __init__(self):
           print('ETL starting...')
           try:
-               self.sql_engine = sqlalchemy.create_engine('mssql://*server_name*/*database_name*?trusted_connection=yes')
+               server = config.config['server_name']
+               database = config.config['database_name']
+               self.sql_engine = sqlalchemy.create_engine(
+                    'mssql+pyodbc://'+server+'/'+database+'?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server',
+                    echo=True
+               )
           except:
                print("could not create sql engine")
 
      def extract(self):
           print("extract running...")
-          # all the urls
-          json_urls = config.config['urls']
           # for testing
           spells_url = 'https://github.com/5e-bits/5e-database/blob/main/src/5e-SRD-Races.json'
-          
-          # get all the json files in the folder
-          # glob finds all the pathnnames matching a specific pattern
-          # json_files = list(sorted(glob.glob(join("Data", "*.json"))))
-                    
+
+          # FOR NOW == just read from the json files not from the web
+
           # just reading in the spells path
           spells_path = join('Database','Data','5e-SDR-Spells.json')
 
@@ -40,6 +42,7 @@ class DNDETL:
 
      def transform(self):
           print('transform')
+          # make data mods later
 
      def load(self):
           print("load running...")
@@ -47,7 +50,11 @@ class DNDETL:
           # write to a csv to check things
           self.spells_df.to_csv(join('Database','Data',"Spells.csv"), index=False)
 
-
+          try:
+               self.spells_df.to_sql('SDR_Spells',self.sql_engine,index=False,if_exists='append',schema='dbo')
+          except SQLAlchemyError as e:
+               error = str(e.__dict__['orig'])
+               return error
 
           print("load successful...")
 

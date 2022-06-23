@@ -1,1 +1,0 @@
--- will be run in sql server local host to upload the data
