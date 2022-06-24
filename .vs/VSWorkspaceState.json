@@ -5,6 +5,6 @@
     "\\DND5eAPI",
     "\\DND5eAPI\\Controllers"
   ],
-  "SelectedNode": "\\Database\\UploadToSQLServer.sql",
+  "SelectedNode": "\\DND5eAPI\\Controllers\\WeatherForecastController.cs",
   "PreviewInSolutionExplorer": false
 }

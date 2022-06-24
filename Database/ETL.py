@@ -93,7 +93,7 @@ if __name__ == "__main__":
      # create an instance of DNDETL
      ETL_engine = DNDETL()
 
-     # run the process
+     # run the process for spells table
      ETL_engine.spells_extract()
      ETL_engine.spells_transform()
      ETL_engine.spells_load()
