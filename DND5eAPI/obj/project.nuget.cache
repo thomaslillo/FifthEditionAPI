@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rOavuIII/hgGCLFewlWON5G8DUvJB9dBjzJDioIQeOwLFZqm32vSRHfo7cyV1Xd4ebtXh5lxSMywCSh8gRzAqQ==",
+  "dgSpecHash": "HEufvkaHg2DvKseaWLDNqxYLJvreUVeyuLZbsAecBOIpZ+OrmQoR+gdX1HCGTT4qCcruF2yfEmrPJbqh11CaUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\DND5eAPI.csproj",
+  "projectFilePath": "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\DND5eAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thomas Lillo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Thomas Lillo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

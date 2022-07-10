@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Database",
-    "\\DND5eAPI",
-    "\\DND5eAPI\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\DND5eAPI\\Controllers\\WeatherForecastController.cs",
+  "SelectedNode": "\\DND5eAPI",
   "PreviewInSolutionExplorer": false
 }

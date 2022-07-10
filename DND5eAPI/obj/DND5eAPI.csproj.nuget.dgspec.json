@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\DND5eAPI.csproj": {}
+    "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\DND5eAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\DND5eAPI.csproj": {
+    "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\DND5eAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\DND5eAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\DND5eAPI.csproj",
         "projectName": "DND5eAPI",
-        "projectPath": "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\DND5eAPI.csproj",
+        "projectPath": "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\DND5eAPI.csproj",
         "packagesPath": "C:\\Users\\Thomas Lillo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thomas Lillo\\source\\Csharp\\DND5eAPI\\obj\\",
+        "outputPath": "C:\\Users\\Thomas Lillo\\source\\repos\\FifthEditionAPI\\DND5eAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thomas Lillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
