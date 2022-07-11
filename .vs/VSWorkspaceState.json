@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DND5eAPI",
+    "\\DND5eAPI\\Controllers",
+    "\\DND5eAPI\\Data",
+    "\\DND5eAPI\\Data\\Models"
   ],
-  "SelectedNode": "\\DND5eAPI",
+  "SelectedNode": "\\DND5eAPI\\Controllers\\SpellController.cs",
   "PreviewInSolutionExplorer": false
 }
