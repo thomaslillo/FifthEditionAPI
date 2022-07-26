@@ -1,0 +1,87 @@
+2022-07-25 4:32:24 PM	This log contains information about the import schema operation into project 'DND5eDatabase' on computer 'THOMASL-L' by user 'Thomas Lillo'.
+2022-07-25 4:32:25 PM	Import of database schema has started.
+2022-07-25 4:32:32 PM	Gathering database credentials
+2022-07-25 4:32:32 PM	Gathering database options
+2022-07-25 4:32:32 PM	Gathering generic database scoped configuration option
+2022-07-25 4:32:33 PM	Gathering users
+2022-07-25 4:32:33 PM	Gathering roles
+2022-07-25 4:32:33 PM	Gathering application roles
+2022-07-25 4:32:33 PM	Gathering role memberships
+2022-07-25 4:32:33 PM	Gathering filegroups
+2022-07-25 4:32:33 PM	Gathering full-text catalogs
+2022-07-25 4:32:33 PM	Gathering assemblies
+2022-07-25 4:32:33 PM	Gathering certificates
+2022-07-25 4:32:33 PM	Gathering asymmetric keys
+2022-07-25 4:32:33 PM	Gathering symmetric keys
+2022-07-25 4:32:33 PM	Gathering encrypted symmetric keys
+2022-07-25 4:32:33 PM	Gathering schemas
+2022-07-25 4:32:33 PM	Gathering XML schema collections
+2022-07-25 4:32:33 PM	Gathering user-defined data types
+2022-07-25 4:32:33 PM	Gathering user-defined types
+2022-07-25 4:32:33 PM	Gathering table types
+2022-07-25 4:32:33 PM	Gathering unique keys for table types
+2022-07-25 4:32:33 PM	Gathering primary keys for table types
+2022-07-25 4:32:33 PM	Gathering indexes for table types
+2022-07-25 4:32:33 PM	Gathering check constraints for table types
+2022-07-25 4:32:33 PM	Gathering default constraints for table types
+2022-07-25 4:32:33 PM	Gathering partition functions
+2022-07-25 4:32:33 PM	Gathering partition schemes
+2022-07-25 4:32:33 PM	Gathering functions
+2022-07-25 4:32:33 PM	Gathering encrypted functions
+2022-07-25 4:32:33 PM	Gathering aggregates
+2022-07-25 4:32:33 PM	Gathering procedures
+2022-07-25 4:32:33 PM	Gathering encrypted procedures
+2022-07-25 4:32:33 PM	Gathering tables
+2022-07-25 4:32:33 PM	Gathering primary keys
+2022-07-25 4:32:33 PM	Gathering unique constraints
+2022-07-25 4:32:33 PM	Gathering foreign keys
+2022-07-25 4:32:33 PM	Gathering default constraints
+2022-07-25 4:32:33 PM	Gathering check constraints
+2022-07-25 4:32:33 PM	Gathering views
+2022-07-25 4:32:33 PM	Gathering encrypted views
+2022-07-25 4:32:33 PM	Gathering indexes
+2022-07-25 4:32:33 PM	Gathering statistics
+2022-07-25 4:32:33 PM	Gathering full-text index stoplists
+2022-07-25 4:32:33 PM	Gathering search property lists
+2022-07-25 4:32:33 PM	Gathering search properties
+2022-07-25 4:32:33 PM	Gathering full-text indexes
+2022-07-25 4:32:33 PM	Gathering column store indexes
+2022-07-25 4:32:33 PM	Gathering spatial indexes
+2022-07-25 4:32:33 PM	Gathering XML indexes
+2022-07-25 4:32:33 PM	Gathering Selective XML indexes
+2022-07-25 4:32:33 PM	Gathering encrypted triggers
+2022-07-25 4:32:33 PM	Gathering triggers
+2022-07-25 4:32:33 PM	Gathering encrypted and clr ddl triggers
+2022-07-25 4:32:33 PM	Gathering ddl triggers
+2022-07-25 4:32:33 PM	Creating edge constraints
+2022-07-25 4:32:33 PM	Gathering synonyms
+2022-07-25 4:32:33 PM	Gathering defaults
+2022-07-25 4:32:33 PM	Gathering data constraint uddt bindings
+2022-07-25 4:32:33 PM	Gathering rules
+2022-07-25 4:32:33 PM	Gathering data constraint uddt bindings
+2022-07-25 4:32:33 PM	Gathering message types
+2022-07-25 4:32:33 PM	Gathering queues
+2022-07-25 4:32:33 PM	Gathering contracts
+2022-07-25 4:32:33 PM	Gathering services
+2022-07-25 4:32:33 PM	Gathering event notifications
+2022-07-25 4:32:33 PM	Gathering remote service bindings
+2022-07-25 4:32:33 PM	Gathering broker priorities
+2022-07-25 4:32:33 PM	Gathering signatures
+2022-07-25 4:32:33 PM	Gathering data compression options
+2022-07-25 4:32:33 PM	Gathering sequence types
+2022-07-25 4:32:33 PM	Gathering security policies
+2022-07-25 4:32:33 PM	Gather column encryption keys
+2022-07-25 4:32:33 PM	Gathering column master keys
+2022-07-25 4:32:33 PM	Gathering external data sources
+2022-07-25 4:32:33 PM	Gathering external file formats
+2022-07-25 4:32:33 PM	Gathering external tables
+2022-07-25 4:32:33 PM	Gathering extended properties
+2022-07-25 4:32:34 PM	Gathering assemblies
+2022-07-25 4:32:34 PM	Gathering credentials
+2022-07-25 4:32:34 PM	Gathering logins
+2022-07-25 4:32:34 PM	Gathering server audits
+2022-07-25 4:32:36 PM	Scanning project for duplicate elements
+2022-07-25 4:32:36 PM	Finished duplicate element processing
+2022-07-25 4:32:37 PM	Finished importing database.
+2022-07-25 4:32:37 PM	A summary of the import was saved to the following location: C:\Users\Thomas Lillo\source\repos\FifthEditionAPI\DND5eDatabase\Import Schema Logs\DND5eDatabase_20220725083224.log
+2022-07-25 4:32:37 PM	Click Finish to continue...
