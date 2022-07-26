@@ -12,10 +12,10 @@ The Spells API will allow you to quickly retrieve relavent information about spe
 
 ## Built With
 
-#### Data Pipeline
+#### Data Infrastructure
 
 - ETL done in Python (Pandas, SQLAlchemy)
-- SQL Server as database
+- Database is Microsoft SQL Server
 
 #### Web API
 
