@@ -10,7 +10,7 @@ namespace DND5eAPI.Data
 
         public DataContext(DbContextOptions<DbContext> options) : base(options)         
         {
-        https://docs.microsoft.com/en-us/dotnet/api/system.data.linq.datacontext?view=netframework-4.8
+        // https://docs.microsoft.com/en-us/dotnet/api/system.data.linq.datacontext?view=netframework-4.8
         }
 
         // https://www.connectionstrings.com/sql-server/

@@ -1,7 +1,9 @@
 ﻿
 using System;
 using DND5eAPI.Data.Models;
+using DND5eAPI.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration; 
 
 namespace DND5eAPI.Controllers;
 
@@ -15,59 +17,38 @@ public class SpellController : ControllerBase
 {
 
     private readonly ILogger<SpellController> _logger;
+    private readonly IConfiguration _config;
 
     // dependency injection in the controller
-    public SpellController(ILogger<SpellController> logger)
+    public SpellController(ILogger<SpellController> logger, IConfiguration config)
     {
         _logger = logger;
+        _config = config;
     }
-
-    // temp data
-    public static List<Spell> _spells = new List<Spell>
-    {
-        new Spell {Id = "tom", Name = "tname", Desc = "description"},
-        new Spell {Id = "tom2", Name = "tname2", Desc = "description2"},
-        new Spell {Id = "tom3", Name = "tname3", Desc = "description3"}
-    };
 
     // return a single spell
     [HttpGet]
-    public async Task<ActionResult<Spell>> GetSpell(string id)
+    public async Task<ActionResult<string>> GetSpell(string id)
     {
-        Spell? return_spell = _spells.Find(s => s.Id == id);
+        // get the path from app settings
+        string spellsPath = _config["TempDBFile"];
 
-        if (return_spell == null)
-        {
-            return BadRequest("Hero Not Found");
-        }
-        else
+        // use the DB reader object
+        DBReader _dbReader = new DBReader();
+
+        string return_spell = _dbReader.readSpell(spellsPath, id);
+
+        // will use the Spell model when DB hooked up
+        // Spell? return_spell = _spells.Find(s => s.Id == id);
+
+        if (!string.IsNullOrWhiteSpace(return_spell))                       
         {
             return Ok(return_spell);
         }
-
+        else
+        {
+            return BadRequest("Spell Not Found");
+        }
     }
-
-    // return a list of multiple spells
-    [HttpGet]
-    [Route("MultipleSpells")]
-    public async Task<ActionResult<List<Spell>>> GetSpells()
-    {
-
-        // return with status code 200
-        return Ok(_spells);
-
-    }
-
-    // add a spell to the list
-    [HttpPost]
-    public async Task<ActionResult<Spell>> AddHomebrewSpell(Spell newSpell)
-    {
-        // check if the new spell is good
-
-        // add the spell to the list
-        _spells.Add(newSpell);
-        return Ok(_spells);
-    }
-
 
 }
