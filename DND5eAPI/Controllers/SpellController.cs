@@ -18,17 +18,49 @@ public class SpellController : ControllerBase
 
     private readonly ILogger<SpellController> _logger;
     private readonly IConfiguration _config;
+    private readonly AppDataContext _database;
 
     // dependency injection in the controller
-    public SpellController(ILogger<SpellController> logger, IConfiguration config)
+    public SpellController(ILogger<SpellController> logger, IConfiguration config, AppDataContext datacontext)
     {
         _logger = logger;
         _config = config;
+        _database = datacontext;
     }
+
+
+    [HttpPost]
+    public async Task<ActionResult<Spell>> PostSpell(Spell newSpell)
+    {
+        // add the new spell to the database
+        _database.Spells.Add(newSpell);
+
+        // save the changes to the database
+        await _database.SaveChangesAsync();
+
+        return CreatedAtAction("GetSpell", new { index = newSpell.Index }, newSpell);
+    }
+
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Spell>> GetSpell(string id)
+    {
+        Spell spell = await _database.Spells.FindAsync(id);
+
+        if (spell == null)
+        {
+            return NotFound();
+        }
+
+        return spell;
+
+    }
+
+    
 
     // return a single spell
     [HttpGet]
-    public async Task<ActionResult<string>> GetSpell(string id)
+    public async Task<ActionResult<string>> GetSpellJSON(string id)
     {
         // get the path from app settings
         string spellsPath = _config["TempDBFile"];

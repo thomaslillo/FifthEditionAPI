@@ -32,15 +32,27 @@ namespace DND5eAPI.Models
 
         public string AttackType { get; set; }
 
-        public Damage SpellDamage { get; set; }
+        public string DamageType { get; set; }
+
+        public Hashtable DamageSlotLvl { get; set; }
+
+        public Hashtable DamageCharLvl { get; set; }
 
         public string School { get; set; }
 
-        public List<string> Classes { get; set; }
+        public Array Classes { get; set; }
 
-        Hashtable HealSlotLvl { get; set; }
+        public Hashtable HealSlotLvl { get; set; }
 
-        DC SpellDC { get; set; }
-        AreaOfEffect SpellAreaOfEffect { get; set; }
+        public Hashtable DCType { get; set; }
+
+        string DCSuccess { get; set; }
+
+        string DCDescription { get; set; }
+
+        string AreaOfEffectType { get; set; }
+
+        double AreaOfEffectSize { get; set; }
+
     }
 }
