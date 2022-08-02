@@ -1,4 +1,4 @@
-﻿using DND5eAPI.Data.Models;
+﻿using DND5eAPI.Models;
 using System.Text.Json;
 using System.IO;
 using Microsoft.Extensions.Configuration;

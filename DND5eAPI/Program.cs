@@ -1,8 +1,8 @@
-
 // dependency injection set up by default
-var builder = WebApplication.CreateBuilder(args);
+using DND5eAPI;
+using Microsoft.EntityFrameworkCore;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
@@ -11,6 +11,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // can add additional dependencies here
+
+// the connection to the database
+var connectionString = builder.Configuration.GetConnectionString("AppDBString");
+builder.Services.AddDbContext<AppDataContext>(options => options.UseSqlServer(connectionString));
+
 
 var app = builder.Build();
 

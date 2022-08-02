@@ -5,13 +5,11 @@ namespace DND5eAPI.Models
 {
     public class Spell
     {
-        [Required]
+        [Key]
         public string Index { get; set; }
 
-        [Required]
         public string Name { get; set; }
 
-        [Required]
         public string Desc { get; set; }
         
         public string? HigherLevelDesc { get; set; }

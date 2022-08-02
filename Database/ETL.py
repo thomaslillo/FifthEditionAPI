@@ -41,6 +41,8 @@ class DNDETL:
 
           print("extract complete...")
 
+          print(self.spells_df.head())
+
      def spells_transform(self):
           print('transform running...')
 
@@ -70,7 +72,7 @@ class DNDETL:
                                                   'heal_at_slot_level.2','heal_at_slot_level.3','heal_at_slot_level.4','heal_at_slot_level.5',
                                                   'heal_at_slot_level.6','heal_at_slot_level.7','heal_at_slot_level.8','heal_at_slot_level.9',
                                                   'area_of_effect.type','area_of_effect.size','school.name','dc.dc_type.index','dc.dc_type.name',
-                                                  'dc.dc_success','dc.desc']]     
+                                                  'dc.dc_success','dc.desc']]
           print("load complete...")
 
      def spells_load(self):

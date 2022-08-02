@@ -9,6 +9,5 @@ namespace DND5eAPI.Services
         Spell getSpellByName(string name);
 
         List<Spell> getSpellsWith(string param, string filter);
-
     }
 }
