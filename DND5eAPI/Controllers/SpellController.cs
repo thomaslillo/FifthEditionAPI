@@ -1,9 +1,9 @@
 ﻿
 using System;
-using DND5eAPI.Data.Models;
 using DND5eAPI.Data;
+using DND5eAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration; 
+using Microsoft.Extensions.Configuration;
 
 namespace DND5eAPI.Controllers;
 
@@ -34,7 +34,7 @@ public class SpellController : ControllerBase
         string spellsPath = _config["TempDBFile"];
 
         // use the DB reader object
-        DBReader _dbReader = new DBReader();
+        DatabaseService _dbReader = new DatabaseService();
 
         string return_spell = _dbReader.readSpell(spellsPath, id);
 
