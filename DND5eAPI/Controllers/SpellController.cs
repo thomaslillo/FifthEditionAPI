@@ -59,28 +59,28 @@ public class SpellController : ControllerBase
     
 
     // return a single spell
-    [HttpGet]
-    public async Task<ActionResult<string>> GetSpellJSON(string id)
-    {
-        // get the path from app settings
-        string spellsPath = _config["TempDBFile"];
+    //[HttpGet]
+    //public async Task<ActionResult<string>> GetSpellJSON(string id)
+    //{
+    //    // get the path from app settings
+    //    string spellsPath = _config["TempDBFile"];
 
-        // use the DB reader object
-        DatabaseService _dbReader = new DatabaseService();
+    //    // use the DB reader object
+    //    DatabaseService _dbReader = new DatabaseService();
 
-        string return_spell = _dbReader.readSpell(spellsPath, id);
+    //    string return_spell = _dbReader.readSpell(spellsPath, id);
 
-        // will use the Spell model when DB hooked up
-        // Spell? return_spell = _spells.Find(s => s.Id == id);
+    //    // will use the Spell model when DB hooked up
+    //    // Spell? return_spell = _spells.Find(s => s.Id == id);
 
-        if (!string.IsNullOrWhiteSpace(return_spell))                       
-        {
-            return Ok(return_spell);
-        }
-        else
-        {
-            return BadRequest("Spell Not Found");
-        }
-    }
+    //    if (!string.IsNullOrWhiteSpace(return_spell))                       
+    //    {
+    //        return Ok(return_spell);
+    //    }
+    //    else
+    //    {
+    //        return BadRequest("Spell Not Found");
+    //    }
+    //}
 
 }

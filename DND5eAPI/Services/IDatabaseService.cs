@@ -4,10 +4,10 @@ namespace DND5eAPI.Services
 {
     public interface IDatabaseService
     {
-        List<Spell> getSpells();
 
-        Spell getSpellByName(string name);
+        public string searchDB(string searchterm, string property);
 
-        List<Spell> getSpellsWith(string param, string filter);
+        public bool writeToDB(string data);
+
     }
 }

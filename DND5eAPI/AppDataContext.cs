@@ -35,6 +35,7 @@ namespace DND5eAPI
         // into actual database queries
         public DbSet<Spell> Spells { get; set; }
 
+
         //https://stackoverflow.com/questions/69472240/asp-net-6-identity-sqlite-services-adddbcontext-how
 
     }

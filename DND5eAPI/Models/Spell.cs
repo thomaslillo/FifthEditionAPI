@@ -6,6 +6,7 @@ namespace DND5eAPI.Models
     public class Spell
     {
         [Key]
+        [Required]
         public string Index { get; set; }
 
         public string Name { get; set; }
@@ -16,7 +17,7 @@ namespace DND5eAPI.Models
 
         public string? Range { get; set; }
 
-        public List<string> Components { get; set; }
+        public ICollection<string> Components { get; set; }
 
         public string Materials { get; set; }
 
@@ -30,29 +31,29 @@ namespace DND5eAPI.Models
 
         public int Level { get; set; }
 
-        public string AttackType { get; set; }
+        public string? AttackType { get; set; }
 
-        public string DamageType { get; set; }
+        public string? DamageType { get; set; }
 
-        public Hashtable DamageSlotLvl { get; set; }
+        public Hashtable? DamageSlotLvl { get; set; }
 
-        public Hashtable DamageCharLvl { get; set; }
+        public Hashtable? DamageCharLvl { get; set; }
 
         public string School { get; set; }
 
-        public Array Classes { get; set; }
+        public ICollection<string> Classes { get; set; }
 
-        public Hashtable HealSlotLvl { get; set; }
+        public Hashtable? HealSlotLvl { get; set; }
 
-        public Hashtable DCType { get; set; }
+        public Hashtable? DCType { get; set; }
 
-        string DCSuccess { get; set; }
+        public string? DCSuccess { get; set; }
 
-        string DCDescription { get; set; }
+        public string? DCDescription { get; set; }
 
-        string AreaOfEffectType { get; set; }
+        public string? AreaOfEffectType { get; set; }
 
-        double AreaOfEffectSize { get; set; }
+        public double? AreaOfEffectSize { get; set; }
 
     }
 }
